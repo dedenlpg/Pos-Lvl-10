@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css">
 @endpush
 @push('js')
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> --}}
 <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
 
 {{ $dataTable->scripts(attributes: ['type' => 'module']) }}

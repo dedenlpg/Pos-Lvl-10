@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="#">
-    <meta name="keywords" content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="keywords"
+        content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
-    @stack('css')
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <!-- Favicon icon -->
@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="libraries/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="libraries/assets/css/jquery.mCustomScrollbar.css">
 
+    @stack('css')
 </head>
 
 <body>
@@ -140,43 +141,43 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-    <!-- Warning Section Ends -->
-    <!-- Required Jquery -->
+    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
+    <!-- amchart js -->
+    <script src="libraries\assets\pages\widget\amchart\amcharts.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\serial.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\light.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="libraries\assets\js\SmoothScroll.js"></script>
+    <script src="libraries\assets\js\pcoded.min.js"></script>
+    <script src="libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="libraries\assets\js\vartical-layout.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\pages\dashboard\analytic-dashboard.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\js\script.js"></script>
 
     @stack('js')
-    {{-- <script type="text/javascript" src="libraries/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="libraries/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="libraries/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="libraries/bower_components/bootstrap/js/bootstrap.min.js"></script> --}}
-    <!-- jquery slimscroll js -->
-    <script type="text/javascript" src="libraries/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-    <!-- modernizr js -->
-    <script type="text/javascript" src="libraries/bower_components/modernizr/js/modernizr.js"></script>
-    <script type="text/javascript" src="libraries/bower_components/modernizr/js/css-scrollbars.js"></script>
-    <!-- Chart js -->
-    <script type="text/javascript" src="libraries/bower_components/chart.js/js/Chart.js"></script>
-    <!-- amchart js -->
-    <script src="libraries/assets/pages/widget/amchart/amcharts.js"></script>
-    <script src="libraries/assets/pages/widget/amchart/serial.js"></script>
-    <script src="libraries/assets/pages/widget/amchart/light.js"></script>
-    <!-- Custom js -->
-    <script type="text/javascript" src="libraries/assets/js/SmoothScroll.js"></script>
-    <script src="libraries/assets/js/pcoded.min.js"></script>
-    <script src="libraries/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="libraries/assets/js/vartical-layout.min.js"></script>
-    <script type="text/javascript" src="libraries/assets/pages/dashboard/analytic-dashboard.min.js"></script>
-    <script type="text/javascript" src="libraries/assets/js/script.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
+        gtag('config', 'UA-23581568-13');
+    </script>
 </body>
 
 </html>

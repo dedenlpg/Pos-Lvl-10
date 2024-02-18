@@ -450,3 +450,7 @@
         <!-- social end -->
     </div>
 @endsection
+@push('js')
+
+
+@endpush
