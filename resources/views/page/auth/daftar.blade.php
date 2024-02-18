@@ -77,7 +77,9 @@
                 <div class="col-sm-12">
                     <form class="md-float-material form-material">
                         <div class="text-center">
-                            <img src="libraries/assets/images/logo.png" alt="logo.png">
+                            <a href="{{ route('DashboardIndex') }}">
+                                <img class="img-fluid" src="libraries/assets/images/logo.png" alt="Theme-Logo">
+                            </a>
                         </div>
                         <div class="auth-box card">
                             <div class="card-block">
