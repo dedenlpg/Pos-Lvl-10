@@ -25,6 +25,15 @@ class UsersDataTable extends DataTable
             ->addColumn('action', function(User $user){
                 return $user->id;
             })
+            ->order(function ($query) {
+                if (request()->has('name')) {
+                    $query->orderBy('name', 'asc');
+                }
+
+                if (request()->has('email')) {
+                    $query->orderBy('email', 'desc');
+                }
+            })
             ->setRowId('id');
     }
 
@@ -72,8 +81,6 @@ class UsersDataTable extends DataTable
             // Column::make('id'),
             Column::make('name'),
             Column::make('email'),
-            Column::make('created_at'),
-            Column::make('updated_at'),
         ];
     }
 

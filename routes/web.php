@@ -1,10 +1,12 @@
 <?php
 
 
+use App\Models\User;
+use Yajra\DataTables\DataTables;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
-use Illuminate\Support\Facades\Route;
 
 
 Route::controller(HomeController::class)->group(function () {
@@ -20,6 +22,5 @@ Route::controller(ProdukController::class)->group(function () {
     Route::get('/produk', 'index')->name('ProdukIndex');
     Route::get('/import-produk', 'ProdukImport')->name('ProdukImport');
 });
-
 
 
