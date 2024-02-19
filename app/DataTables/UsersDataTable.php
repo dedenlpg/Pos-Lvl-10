@@ -29,10 +29,6 @@ class UsersDataTable extends DataTable
                 if (request()->has('name')) {
                     $query->orderBy('name', 'asc');
                 }
-
-                if (request()->has('email')) {
-                    $query->orderBy('email', 'desc');
-                }
             })
             ->setRowId('id');
     }
